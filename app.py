@@ -40,8 +40,7 @@ def search():
     
     if results:
         best_result = results[0]
-        return best_result[0]
-        # return jsonify({'repense': best_result[0]}), 200
+        # return best_result[0]
+        return jsonify({'repense': best_result[0]}), 200
     else:
         return jsonify({'message': 'لم يتم العثور على إجابة.'}), 404
-
